@@ -2,7 +2,7 @@
 
 ### 🚀 Welcome to my GitHub!
 
-I’m a 2nd-year Computer Science Engineering student at Geetanjali Institute of Technical Studies, Udaipur. My journey in the tech world is driven by my passion for front-end development and my enthusiasm for turning ideas into reality with code.
+I’m a 3rd-year Computer Science Engineering student at Geetanjali Institute of Technical Studies, Udaipur. My journey in the tech world is driven by my passion for front-end development and my enthusiasm for turning ideas into reality with code.
 
 ## About Me 🌟
 
