@@ -1,7 +1,7 @@
 [![MasterHead](https://user-images.githubusercontent.com/90236635/232446433-d5540fa2-fe28-4bb8-b929-cdb51fe61336.gif)](https://rishavchanda.io)
 <h1 align="center">Hi 👋, I'm Rehan Raza</h1>
 <h3 align="center">Web Development Lead at the CII Club, Geetanjali Institute of Technical Studies, mentoring peers and driving innovative web projects. Passionate 3rd-year Computer Science Engineering student focused on front-end development and crafting user-centric digital experiences.</h3>
-<img align="right width=-"400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+<!-- <img align="right width=-"400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif"> -->
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sydrehan&label=Profile%20views&color=0e75b6&style=flat" alt="sydrehan" /> </p>
 
