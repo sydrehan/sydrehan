@@ -1,114 +1,43 @@
-<?php
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+# Hi there! I'm Syd Rehan Raza👋
 
-/**
- * Google Sitemap Lite
- *
- * @package		Bitlys
- * @category	Modules
- * @author		Leonso Medina
- * @link        
- * @copyright 	
- */
+### 🚀 Welcome to my GitHub!
 
-$plugin_info = array(
-	'pi_name'        => 'Bitlys',
-	'pi_version'     => '1.0',
-	'pi_author'      => 'Leonso Medina',
-	'pi_author_url'  => '',
-	'pi_description' => 'Transforms URL to bitly short form through bitly API',
-	'pi_usage'       => Bitlys::usage()
-  );
+I’m a 3rd-year Computer Science Engineering student at Geetanjali Institute of Technical Studies, Udaipur. My journey in the tech world is driven by my passion for front-end development and my enthusiasm for turning ideas into reality with code.
 
+## About Me 🌟
 
-class Bitlys
-{
-    private $access_token = '';
-	
-	/**
-	 * Constructor
-	 * 
-	 * @return unknown_type
-	 */
-	public function __construct()
-	{								
-	}        
-    
-    function transform() {
-        
-        $originalURL = ee()->TMPL->fetch_param('url');
-        
-        //if not URL provided in tag then return empty string
-        if(!$originalURL) {
-            return '';   
-        }
-        
-        // Specify the URL for the POST Data to go to
-        $url = "https://api-ssl.bitly.com/v3/shorten?access_token=". $this->access_token ."&longUrl=". urlencode($originalURL);
+- 🎓 **Education:** CSE @ GITS, Udaipur
+- 💻 **Role:** Front-End Developer
+- 🎨 **Passion:** Crafting beautiful and functional web interfaces
 
-        // Initiate cURL (this must be compiled on the server)
-        $ch = curl_init();
+## 🔧 Technologies & Tools
 
-        // Set the URL
-        curl_setopt($ch, CURLOPT_URL, $url);
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=fff)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=fff)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=333)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=333)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
+![jQuery](https://img.shields.io/badge/-jQuery-0769AD?logo=jquery&logoColor=fff)
+![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=fff)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=fff)
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?logo=figma&logoColor=fff)
 
-        //curl_setopt($ch, CURLOPT_HEADER, true); // Display headers
-        curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_VERBOSE, 1);
-        $content = curl_exec ($ch);
-        curl_close ($ch);
-        
-        //if failure then just return original URL
-        if(!$content) {
-            return $originalURL;
-        }
-        
-        $result = json_decode($content);
-        
-        if($result == NULL || $result->status_code !== 200) {
-            return $originalURL;
-        }                
-        
-        return $result->data->url;
-    }        
-       
-    static function usage()
-    {
-        ob_start(); 
-        ?>
-            INSTALLATION
+## 🌱 Currently Learning
 
-            All you need to do to set it up is to edit this file:
+- 🔄 **Advanced React**
+- 🆕 **Modern JavaScript (ES6+)**
+- 🎨 **CSS Preprocessors (Sass)**
 
-            bitlys/pi.bitlys.php
+## 📫 Let's Connect!
 
-            look for $access_token and set it to your bitly access token.
-            
-            You can obtain your bitly access token by going to this page and type in your bitly password:
-            
-            https://bitly.com/a/oauth_apps
+- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=fff)]([https://www.linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/rehan-raza-118720257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+- [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?logo=twitter&logoColor=fff)]([https://twitter.com/your-twitter-profile](https://x.com/RehanRazaSayed1?t=WGQFW0mxpm18_dodJDqjKA&s=09))
+- [![Instagram](https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=fff)]([https://www.instagram.com/your-instagram-profile](https://www.instagram.com/syd.rehan.raza?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==))
 
-            After that just move the bitlys directory into the thrid_party directory in your 
-            Expression engine installation.
+## ✨ My Projects
 
-            -----------------------------------------------------
+Explore my repositories to see my projects and the magic I create with code! Feel free to fork, star, and open issues. Let's build something amazing together! 🚀
 
-            USAGE
-            
-            Just pass a URL parameter to the template like shown below and it
-            will return the bitly shortened version.
+---
 
-            {exp:bitlys:transform url="http://example.com"}
-
-        <?php
-        $buffer = ob_get_contents();
-
-        ob_end_clean(); 
-
-        return $buffer;
-    }
-    // END
-
-}
-/* End of file pi.bitlys.php */ 
-/* Location: ./system/expressionengine/third_party/bitlys/pi.bitlys.php */ 
+⭐️ From Rehan Raza
